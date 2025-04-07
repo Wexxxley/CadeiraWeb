@@ -1,0 +1,36 @@
+body{
+    background-color: #CBF3F0;
+}
+
+.title{
+    background-color: #2EC4B6;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px 0px 50px 0px;
+}
+
+.paragraph{
+    background-color: #2EC4B6;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin: 10px 80px;
+}
+
+foto{
+    
+}
+
+.img{
+    width: 20%;
+    border:5px solid #2EC4B6;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cite{
+    display: block;
+    text-align: center;
+}
