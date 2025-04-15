@@ -1,0 +1,35 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ddd;
+    border-bottom:  1px solid black;
+    
+}
+
+tfoot {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.lineModified{
+    background-color:  #ddd
+}
+
+.borderLeftRight{
+    border-left:  1px solid black;
+    border-right:  1px solid black;
+}
