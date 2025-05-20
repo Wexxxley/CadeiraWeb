@@ -1,0 +1,13 @@
+#paragrafo1{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    background-color: rgb(0, 16, 107);
+}
+
+#paragrafo2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 130, 43);
+}

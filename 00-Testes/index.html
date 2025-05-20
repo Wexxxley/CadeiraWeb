@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link id="thema" rel="stylesheet" href="style1.css">
+
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multiplos estilos</h1>
+    <button onclick="estilo1()">Estilo 1</button>
+    <button onclick="estilo2()">Estilo 2</button>
+    <button onclick="estiloCirular()">Cicular</button>
+
+
+    <p id="paragrafo1" id="center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, necessitatibus! Sapiente praesentium, perferendis impedit architecto neque commodi ducimus maiores illum magni ex explicabo asperiores consequuntur, dolorem obcaecati. Quia, quae dolorum.
+    </p>
+
+    <p id="center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, necessitatibus! Sapiente praesentium, perferendis impedit architecto neque commodi ducimus maiores illum magni ex explicabo asperiores consequuntur, dolorem obcaecati. Quia, quae dolorum.
+    </p>
+
+    <script>
+        function estilo1() {   
+            let linkCss = document.getElementById("thema");
+            linkCss.href = "style1.css";
+        }
+        function estilo2() {   
+            let linkCss = document.getElementById("thema");
+            linkCss.setAttribute("href", "style2.css");
+        }
+
+        let flag = 1;
+        function estiloCirular(){
+            linkCss = document.getElementById("thema");
+            if(flag == 1){
+                linkCss.setAttribute("href", "style2.css");
+                flag = 2;
+            } else{
+                linkCss.setAttribute("href", "style1.css");
+                flag = 1;
+            }
+        }
+    </script>
+
+</body>
+</html>

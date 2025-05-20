@@ -1,0 +1,57 @@
+#paragrafo1{
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgb(255, 0, 0);
+}
+
+#paragrafo2{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    background-color: rgb(255, 255, 0);
+}
+
+p#center {
+  text-align: center;
+  color: red;
+}
+
+
+div p {
+     color: red; 
+}
+
+div > p { 
+    color: blue; 
+}
+
+h1 + p { 
+    font-weight: bold;
+}
+
+h1 ~ p { 
+    margin-left: 20px; 
+}
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+::marker {
+  color: red;
+  font-size: 23px;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
