@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        :root {
+            --cor-mais_escura: #1C1815;
+            --cor-laranja: #EFA344;
+            --cor-azul: #3C72A5;
+            --cor-cinza-claro: #E7EAE6;
+            --cor-azul-claro: #64A0CD;
+            --cor-white: #FFFFFF;
+            --cor-black: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cor-white);
+            margin: 50px;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 500px;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: var(--cor-black) 1px solid;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #f0f0f0;
+            border-bottom: 1px solid var(--cor-black);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e0f7fa;
+        }
+
+        col {
+            border-left: 1px solid var(--cor-black);
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <table>
+        <caption>Listagem de produtos</caption>
+
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Preço(R$)</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Produto A</td>
+                <td>Categoria 1</td>
+                <td>10.00</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Produto B</td>
+                <td>Categoria 2</td>
+                <td>20.00</td>
+                <td>50</td>
+            </tr>
+
+            <tr>
+                <td>003</td>
+                <td>Produto C</td>
+                <td>Categoria 3</td>
+                <td>30.00</td>
+                <td>75</td>
+            </tr>
+
+             <tr>
+                <td>004</td>
+                <td>Produto D</td>
+                <td>Categoria 1</td>
+                <td>10.00</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>005</td>
+                <td>Produto E</td>
+                <td>Categoria 2</td>
+                <td>20.00</td>
+                <td>50</td>
+            </tr>
+            
+            <tr>
+                <td>006</td>
+                <td>Produto F</td>
+                <td>Categoria 3</td>
+                <td>30.00</td>
+                <td>75</td>
+            </tr>
+        </table>
+    
+</body>
+</html>

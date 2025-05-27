@@ -1,11 +1,4 @@
-
-let pessoa = {
-    nome: "Matheus",
-    idade: "19",
-    saudacao: function (){
-        console.log("My name is " + this.nome + " and i'm " + this.idade + " years old")
-    }
+function soma(a, b) {
+    return a + b;
 }
 
-console.log(Object.keys(pessoa))
-console.log(Object.entries(pessoa))

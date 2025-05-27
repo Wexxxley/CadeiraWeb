@@ -9,7 +9,9 @@
 }
 
 * {
-  box-sizing: border-box;
+  padding: 0; /*zerando o padding */
+  margin: 0;  /*zerando o margin */
+  box-sizing: border-box;  /*adiciona o padding a contagem do tamanho do conteudo*/
 }
 
 /* Style the body */

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            --cor-mais_escura: #1C1815;
+            --cor-laranja: #EFA344;
+            --cor-azul: #3C72A5;
+            --cor-cinza-claro: #E7EAE6;
+            --cor-azul-claro: #64A0CD;
+            --cor-white: #FFFFFF;
+            --cor-black: #000000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: var(--cor-azul-claro);
+            color: var(--cor-white);
+            padding: 24px;
+            text-align: center;
+        }
+
+        #Container {
+            display: flex;
+            min-height: 70vh;
+        }
+
+        nav {
+            background: var(--cor-azul);
+            flex-basis: 30%; 
+            padding: 24px 16px;
+            color: var(--cor-white);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        nav a {
+            color: var(--cor-white);
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        main {
+            background: var(--cor-cinza-claro);
+            flex-basis: 70%; 
+            padding: 24px;
+            color: var(--cor-white);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        section {
+            background: var(--cor-mais_escura);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .imagem-fake {
+            width: 100%;
+            max-width: 300px;
+            height: 180px;
+            background: var(--cor-azul);
+            margin: 0 auto 16px auto;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-white);
+            font-size: 1.2em;
+        }
+
+        aside {
+            background: var(--cor-laranja);
+            padding: 16px;
+            color: var(--cor-mais_escura);
+            border-radius: 8px;
+            margin-top: 16px;
+        }
+
+        footer {
+            background: var(--cor-azul-claro);
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+        }
+
+        @media (max-width: 400px) {
+            #Container {
+                flex-direction: column;
+            }
+        } 
+
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <h1>Layout Flexbox Semântico</h1>
+    </header>
+
+    <div id="Container">
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#destaque">Destaque</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        
+        <main>
+            
+            <section id="home">
+                <div class="imagem-fake">Imagem 1</div>
+                <h1>Início</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quod sed eos temporibus nesciunt error natus at ullam laudantium. Modi placeat, error aut ipsam odio laboriosam non veniam veritatis dolorum.</p>
+            </section>
+
+            <section id="sobre">
+                <div class="imagem-fake">Imagem 2</div>
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quod sed eos temporibus nesciunt error natus at ullam laudantium. Modi placeat, error aut ipsam odio laboriosam non veniam veritatis dolorum.</p>
+            </section>
+
+            <aside id="destaque">
+                <h3>Destaque</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo veritatis in laboriosam aliquam assumenda temporibus blanditiis reiciendis velit, quibusdam voluptates, fugit nihil ducimus, voluptate modi excepturi amet. Omnis, sed.</p>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        2025 - Layout Flexbox Semântico - <a id="contato" href="https://github.com/Wexxxley">Wesley Freitas</a>
+    </footer>
+
+</body>
+</html>

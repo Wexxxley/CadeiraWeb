@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <figure>
+        <img id="img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-wor
+ld/1.svg
+" alt="Um pokemon">
+    </figure>
+    
+    <button onclick="voltar()">VOLTAR</button>
+    <button onclick="adiantar()">ADIANTAR</button>
+
+</body>
+
+    <script>
+
+        let currentId = 1;
+
+        function updateImage() {
+            document.getElementById("img").src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${currentId}.svg`;
+        }
+
+        function voltar() {
+            if (currentId > 1) {
+                currentId--;
+                updateImage();
+            }
+        }
+
+        function adiantar() {
+            if (currentId < 100){
+                currentId++;
+                updateImage();
+            }
+        }
+
+    </script>
+
+</html>
